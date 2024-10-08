@@ -14,10 +14,80 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83C9B5D1938C22907FF6E247"
+               BuildableName = "DesignSystem.framework"
+               BlueprintName = "DesignSystem"
+               ReferencedContainer = "container:Projects/UserInterface/DesignSystem/DesignSystem.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "64DAAC389D348944D37C8584"
+               BuildableName = "DesignSystemDemo.app"
+               BlueprintName = "DesignSystemDemo"
+               ReferencedContainer = "container:Projects/UserInterface/DesignSystem/DesignSystem.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C538ACB2975E6B55AFA02B19"
+               BuildableName = "libDomain.a"
+               BlueprintName = "Domain"
+               ReferencedContainer = "container:Projects/Domain/Domain.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "9AD688AB5F1C99F68C56D9DA"
                BuildableName = "Expo_iOS.app"
                BlueprintName = "Expo-iOS"
                ReferencedContainer = "container:Projects/App/Expo-iOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "889701595646A30881D30ED8"
+               BuildableName = "libFeature.a"
+               BlueprintName = "Feature"
+               ReferencedContainer = "container:Projects/Feature/Feature.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E7219A64E70DCA7A233E1E7E"
+               BuildableName = "GlobalThirdPartyLibrary.framework"
+               BlueprintName = "GlobalThirdPartyLibrary"
+               ReferencedContainer = "container:Projects/Shared/GlobalThirdPartyLibrary/GlobalThirdPartyLibrary.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +110,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AD688AB5F1C99F68C56D9DA"
-            BuildableName = "Expo_iOS.app"
-            BlueprintName = "Expo-iOS"
-            ReferencedContainer = "container:Projects/App/Expo-iOS.xcodeproj">
+            BlueprintIdentifier = "83C9B5D1938C22907FF6E247"
+            BuildableName = "DesignSystem.framework"
+            BlueprintName = "DesignSystem"
+            ReferencedContainer = "container:Projects/UserInterface/DesignSystem/DesignSystem.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "PROD"
@@ -57,16 +126,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AD688AB5F1C99F68C56D9DA"
-            BuildableName = "Expo_iOS.app"
-            BlueprintName = "Expo-iOS"
-            ReferencedContainer = "container:Projects/App/Expo-iOS.xcodeproj">
+            BlueprintIdentifier = "83C9B5D1938C22907FF6E247"
+            BuildableName = "DesignSystem.framework"
+            BlueprintName = "DesignSystem"
+            ReferencedContainer = "container:Projects/UserInterface/DesignSystem/DesignSystem.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "DEV">

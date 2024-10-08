@@ -7,5 +7,25 @@
       <FileRef
          location = "group:App/Expo-iOS.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Domain/Domain.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Feature/Feature.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Shared"
+         name = "Shared">
+         <FileRef
+            location = "group:GlobalThirdPartyLibrary/GlobalThirdPartyLibrary.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UserInterface"
+         name = "UserInterface">
+         <FileRef
+            location = "group:DesignSystem/DesignSystem.xcodeproj">
+         </FileRef>
+      </Group>
    </Group>
 </Workspace>
