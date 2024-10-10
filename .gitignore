@@ -99,4 +99,6 @@ Tuist/Dependencies
 Derived/
 *.xcworkspace
 *.xcodeproj
+Package.swift
+Package.resolved
 master.key
