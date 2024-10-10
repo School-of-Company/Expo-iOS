@@ -3,14 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1F131D733E228E17B01A6361 /* TuistAssets+ExpoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910AE51037C2FEADCFCBC9F4 /* TuistAssets+ExpoIOS.swift */; };
 		373605E356772ECE7FCC99DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FA5BFAB413E63B48D6E2AD /* LaunchScreen.storyboard */; };
 		37815D5B536B45DEA4D47608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6ABD9E2F27EDE8FB826D74 /* Assets.xcassets */; };
+		400EF75DB3F849228A268D7C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A3DA98D7ACA440F5EB4D9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BC7B71818528B2E9AE0F0480 /* ExpoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43CDBAB6149E8B53CF54003 /* ExpoApp.swift */; };
+		BE552AA9C1B0856D84172D2B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A3DA98D7ACA440F5EB4D9 /* Alamofire.framework */; };
+		C20E0800622A4202532C8CC6 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C81D634E5A74925DECBF8D4 /* Moya.framework */; };
 		F135F2FD9F117542209DA53D /* TuistBundle+ExpoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47655C06576925961E5B70A4 /* TuistBundle+ExpoIOS.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				400EF75DB3F849228A268D7C /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +35,8 @@
 		45516B35D521F791029D750D /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		47655C06576925961E5B70A4 /* TuistBundle+ExpoIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+ExpoIOS.swift"; sourceTree = "<group>"; };
 		910AE51037C2FEADCFCBC9F4 /* TuistAssets+ExpoIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+ExpoIOS.swift"; sourceTree = "<group>"; };
+		9C81D634E5A74925DECBF8D4 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9A3DA98D7ACA440F5EB4D9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43CDBAB6149E8B53CF54003 /* ExpoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoApp.swift; sourceTree = "<group>"; };
 		CD5F6711E52A4026207A6469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE6ABD9E2F27EDE8FB826D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE552AA9C1B0856D84172D2B /* Alamofire.framework in Frameworks */,
+				C20E0800622A4202532C8CC6 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +60,9 @@
 		0D5A286A53310A8E8F1E98AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				AB9A3DA98D7ACA440F5EB4D9 /* Alamofire.framework */,
 				FD985D1955370BAC61FB5958 /* Expo_iOS.app */,
+				9C81D634E5A74925DECBF8D4 /* Moya.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,8 +176,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = SchoolofCompany;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 56793B079CCF6CBF6FD5700A /* Build configuration list for PBXProject "Expo-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -277,10 +285,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -445,10 +450,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -474,10 +476,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
