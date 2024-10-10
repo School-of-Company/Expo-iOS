@@ -16,6 +16,7 @@
 		C20E0800622A4202532C8CC6 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C81D634E5A74925DECBF8D4 /* Moya.framework */; };
 		EA9E7E112CB7B44500427430 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E7E102CB7B44500427430 /* MainView.swift */; };
 		EA9E7E152CB7B4E500427430 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E7E142CB7B4E500427430 /* MyPageView.swift */; };
+		EA9E7E192CB7B64800427430 /* EventCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E7E182CB7B64800427430 /* EventCheckView.swift */; };
 		F135F2FD9F117542209DA53D /* TuistBundle+ExpoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47655C06576925961E5B70A4 /* TuistBundle+ExpoIOS.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		CE6ABD9E2F27EDE8FB826D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9E7E102CB7B44500427430 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EA9E7E142CB7B4E500427430 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		EA9E7E182CB7B64800427430 /* EventCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCheckView.swift; sourceTree = "<group>"; };
 		F1FA5BFAB413E63B48D6E2AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD985D1955370BAC61FB5958 /* Expo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -188,8 +190,17 @@
 		EA9E7E162CB7B5BF00427430 /* EventFeature */ = {
 			isa = PBXGroup;
 			children = (
+				EA9E7E172CB7B5EA00427430 /* Sources */,
 			);
 			path = EventFeature;
+			sourceTree = "<group>";
+		};
+		EA9E7E172CB7B5EA00427430 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E7E182CB7B64800427430 /* EventCheckView.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		F94AE1D2C9E0BE3B7AEA8815 /* Derived */ = {
@@ -291,6 +302,7 @@
 				EA9E7E112CB7B44500427430 /* MainView.swift in Sources */,
 				EA9E7E152CB7B4E500427430 /* MyPageView.swift in Sources */,
 				F135F2FD9F117542209DA53D /* TuistBundle+ExpoIOS.swift in Sources */,
+				EA9E7E192CB7B64800427430 /* EventCheckView.swift in Sources */,
 				BC7B71818528B2E9AE0F0480 /* ExpoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
