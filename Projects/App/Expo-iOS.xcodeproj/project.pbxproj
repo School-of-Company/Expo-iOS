@@ -142,8 +142,16 @@
 		EA9E7E0D2CB7B30000427430 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EA9E7E0E2CB7B3B800427430 /* MainFeature */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		EA9E7E0E2CB7B3B800427430 /* MainFeature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainFeature;
 			sourceTree = "<group>";
 		};
 		F94AE1D2C9E0BE3B7AEA8815 /* Derived */ = {
