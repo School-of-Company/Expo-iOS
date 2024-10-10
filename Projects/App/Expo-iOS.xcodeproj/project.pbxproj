@@ -144,6 +144,7 @@
 		EA9E7E0D2CB7B30000427430 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EA9E7E122CB7B47F00427430 /* MyPageFeature */,
 				EA9E7E0E2CB7B3B800427430 /* MainFeature */,
 			);
 			path = Feature;
@@ -163,6 +164,13 @@
 				EA9E7E102CB7B44500427430 /* MainView.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		EA9E7E122CB7B47F00427430 /* MyPageFeature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPageFeature;
 			sourceTree = "<group>";
 		};
 		F94AE1D2C9E0BE3B7AEA8815 /* Derived */ = {
