@@ -14,6 +14,7 @@
 		BC7B71818528B2E9AE0F0480 /* ExpoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43CDBAB6149E8B53CF54003 /* ExpoApp.swift */; };
 		BE552AA9C1B0856D84172D2B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A3DA98D7ACA440F5EB4D9 /* Alamofire.framework */; };
 		C20E0800622A4202532C8CC6 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C81D634E5A74925DECBF8D4 /* Moya.framework */; };
+		EA9E7E112CB7B44500427430 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E7E102CB7B44500427430 /* MainView.swift */; };
 		F135F2FD9F117542209DA53D /* TuistBundle+ExpoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47655C06576925961E5B70A4 /* TuistBundle+ExpoIOS.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		B43CDBAB6149E8B53CF54003 /* ExpoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoApp.swift; sourceTree = "<group>"; };
 		CD5F6711E52A4026207A6469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE6ABD9E2F27EDE8FB826D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA9E7E102CB7B44500427430 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F1FA5BFAB413E63B48D6E2AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD985D1955370BAC61FB5958 /* Expo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,8 +152,17 @@
 		EA9E7E0E2CB7B3B800427430 /* MainFeature */ = {
 			isa = PBXGroup;
 			children = (
+				EA9E7E0F2CB7B42900427430 /* Sources */,
 			);
 			path = MainFeature;
+			sourceTree = "<group>";
+		};
+		EA9E7E0F2CB7B42900427430 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E7E102CB7B44500427430 /* MainView.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		F94AE1D2C9E0BE3B7AEA8815 /* Derived */ = {
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F131D733E228E17B01A6361 /* TuistAssets+ExpoIOS.swift in Sources */,
+				EA9E7E112CB7B44500427430 /* MainView.swift in Sources */,
 				F135F2FD9F117542209DA53D /* TuistBundle+ExpoIOS.swift in Sources */,
 				BC7B71818528B2E9AE0F0480 /* ExpoApp.swift in Sources */,
 			);
