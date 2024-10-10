@@ -146,6 +146,7 @@
 		EA9E7E0D2CB7B30000427430 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EA9E7E162CB7B5BF00427430 /* EventFeature */,
 				EA9E7E122CB7B47F00427430 /* MyPageFeature */,
 				EA9E7E0E2CB7B3B800427430 /* MainFeature */,
 			);
@@ -182,6 +183,13 @@
 				EA9E7E142CB7B4E500427430 /* MyPageView.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		EA9E7E162CB7B5BF00427430 /* EventFeature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventFeature;
 			sourceTree = "<group>";
 		};
 		F94AE1D2C9E0BE3B7AEA8815 /* Derived */ = {
