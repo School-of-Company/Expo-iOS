@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ "*" ]
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+        with:
+          swift-version: "5.7"
+
+      - name: Build
+        run: swift build
+
+    #   - name: Run tests
+    #     run: swift test
+
+      - name: Success Discord Notification
+        uses: sarisia/actions-status-discord@v1
+        if: ${{ success() }}
+        with:
+          title: CI 성공!
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          description: CI를 성공했습니다.
+          color: 00FF00
+          username: CI Bot
+          url: https://github.com/GSM-GOGO/GSM-GOGO-Server
+
+      - name: Failed Discord Notification
+        uses: sarisia/actions-status-discord@v1
+        if: ${{ failure() }}
+        with:
+          title: CI 실패!
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          image: ${{ secrets.CI_FAIL_IMAGE }}
+          description: CI를 실패했습니다.
+          color: FF0000
+          username: CI Bot
+          url: https://github.com/GSM-GOGO/GSM-GOGO-Server
