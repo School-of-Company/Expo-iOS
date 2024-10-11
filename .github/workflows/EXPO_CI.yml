@@ -28,6 +28,7 @@ jobs:
           title: CI 성공!
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           status: ${{ job.status }}
+          image: ${{ secrets.CI_SUCCESS_IMAGE }}
           description: CI를 성공했습니다.
           color: 00FF00
           username: CI Bot
