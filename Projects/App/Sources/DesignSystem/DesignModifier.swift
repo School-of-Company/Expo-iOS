@@ -9,10 +9,15 @@
 import Foundation
 import SwiftUI
 
-typealias Expo = ExpoIOSFontFamily.Pretendard
+typealias Font = ExpoIOSFontFamily.Pretendard
+typealias Color = ExpoIOSAsset.Color
 
 extension View {
     func expoFont(_ font: ExpoIOSFontConvertible, size: CGFloat) -> some View {
         self.font(font.swiftUIFont(size: size))
+    }
+    
+    func expoColor(_ color: ExpoIOSColors) -> some View {
+            self.foregroundColor(color.swiftUIColor)
     }
 }
