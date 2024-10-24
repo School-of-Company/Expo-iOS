@@ -1,5 +1,5 @@
 //
-//  FontModifier.swift
+//  DesignModifier.swift
 //  Expo-iOS
 //
 //  Created by 서지완 on 10/14/24.
@@ -61,5 +61,8 @@ extension View {
     func expoColor(_ color: ExpoIOSColors) -> some View {
         self.foregroundColor(color.swiftUIColor)
     }
-}
 
+    func expoBackground(_ color: ExpoIOSColors) -> some View {
+            self.background(color.swiftUIColor)
+    }
+}
