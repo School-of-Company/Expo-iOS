@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "Property 1 사용자.svg",
+      "filename" : "Property 1 사용자 3.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Property 1 사용자 4.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
