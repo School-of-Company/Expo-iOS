@@ -3,6 +3,8 @@ name: Expo CI
 on:
   pull_request:
     branches: [ "*" ]
+  push:
+    branches: [ "*" ]
 
 jobs:
   CI:
