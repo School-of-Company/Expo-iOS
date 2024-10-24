@@ -6,7 +6,6 @@
 //  Copyright © 2024 SchoolofCompany. All rights reserved.
 //
 
-import Foundation
 import SwiftUI
 
 typealias ExpoFont = ExpoIOSFontFamily.Pretendard
@@ -17,7 +16,7 @@ enum ExpoFontStyle {
     case body1B, body1R, body2B, body2R
     case caption1B, caption1R, caption2B, caption2R
 
-    var fontConfig: (size: CGFloat, weight: Font.Weight, lineHeight: CGFloat) {
+    var fontConfig: (size: CGFloat, weight: UIFont.Weight, lineHeight: CGFloat) {
         switch self {
         case .title1M: return (30, .medium, 1.2)
         case .title2B: return (24, .semibold, 1.1)
@@ -35,25 +34,18 @@ enum ExpoFontStyle {
         }
     }
 
-    var font: Font {
+    var uiFont: UIFont {
         let config = fontConfig
-        return Font.custom("Pretendard-\(config.weight.name)", size: config.size)
+        return UIFont.systemFont(ofSize: config.size, weight: config.weight)
+    }
+
+    var font: Font {
+        Font(uiFont)
     }
 
     var lineHeight: CGFloat {
         let config = fontConfig
         return config.size * config.lineHeight
-    }
-}
-
-extension Font.Weight {
-    var name: String {
-        switch self {
-        case .regular: return "Regular"
-        case .medium: return "Medium"
-        case .semibold: return "SemiBold"
-        default: return "Regular"
-        }
     }
 }
 
@@ -68,5 +60,9 @@ extension View {
 
     func expoColor(_ color: ExpoIOSColors) -> some View {
         self.foregroundColor(color.swiftUIColor)
+    }
+
+    func expoBackground(_ color: ExpoIOSColors) -> some View {
+            self.background(color.swiftUIColor)
     }
 }
